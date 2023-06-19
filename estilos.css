@@ -937,6 +937,12 @@ footer{
         margin-bottom: 40px;
 
     }
+    .brand+p{
+
+      
+        text-align:center;
+    
+    }
 
 }
 
@@ -1067,6 +1073,13 @@ footer{
      }
     .footer-content{
         justify-content: center;}
+
+        .brand+p{
+
+      
+            text-align:center;
+        
+        }
    
 }
 
