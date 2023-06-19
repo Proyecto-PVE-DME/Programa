@@ -800,11 +800,33 @@ footer{
 @media screen and (max-width:800px ){
 
 
+  
+
+
     .contenedor-preguntas{
 
-        height: 120vh;
+        height: 150vh;
+        width: 100vh;
+
+            }
+
+   p{
+
+    font-size: 10px;
+
+
+   }
+
+    .articulo-flecha{
+
+        width: 20px;
+        height: 20px;
+       
+        
 
     }
+
+  
 
     .contenido-slider > img{
 
@@ -824,56 +846,55 @@ footer{
 
         font-size: 23px;
     }
+    .articulo-pregunta{
 
-}
-
-/*adaptacion a dispositivos moviles de cada elemento cuando tenga 600px*/
-
-@media screen and (max-width:600px ){
-
-
-      .contenedor-preguntas{
-
-        height: 120vh;
-
+        font-size: 13px;
+        justify-content:left;
+       
+       
     }
 
-    .contenido-slider{
-
-       flex-direction: column-reverse;/*para que se pongan los elementos uno encima del otro*/
+    .articulo-respuesta{
 
 
-    }
+        font-size: 11px;
+    
+        }
 
-    .contenido-slider > section{
-
-        width: 80%;
-
-
-    }
-
-   
-}
-
-
-/* OTROS */
-@media screen and (max-width:800px){
     .nav-menu{
         width: 50vw;
     }
     .nav-title{
         font-size: 1px;
     }
+
+
+
+
      .img-galeria{
-        width: 80%;
+        width: 60%;
         margin-bottom: 40px;
      }
      .checklist{
-        width: 80%;
+        width: 95%;
      }
      .service{
         margin-bottom: 30px;
      }
+     .n-service{
+        font-size: 15px;
+     }
+     .contenedor-conclusiones .n-service {
+        font-size: 10px;
+     }
+
+     .contenedor-bibliografia .n-service{
+
+        font-size: 8px;
+
+     }
+
+     
      .agregar-imagen{
         width: 80%;
 
@@ -881,9 +902,14 @@ footer{
      .contenedor-objetivos img{
         width: 45%;
      }
-.contenedor-metodologia img{
+    .contenedor-metodologia img{
         width: 45%;
      }
+
+     .contenedor-recomendaciones img{
+        width: 45%;
+     }
+     
      .cont-expert{
         width: 80%;
      }
@@ -911,11 +937,73 @@ footer{
         margin-bottom: 40px;
 
     }
+
 }
 
-@media screen and (max-width:500px) {
+/*adaptacion a dispositivos moviles de cada elemento cuando tenga 600px*/
+
+@media screen and (max-width:600px ){
+
+
+
+  
+
+      .contenedor-preguntas{
+
+        height: 150vh;
+        width: 100vh;
+
+    }
+
+    p{
+
+        font-size: 10px;
+    
+    
+       }
+
+ 
+
+    .articulo-flecha{
+
+        width: 20px;
+        height: 20px;
+   
+        
+
+    }
+
+
+    .contenido-slider{
+
+       flex-direction: column-reverse;/*para que se pongan los elementos uno encima del otro*/
+
+
+    }
+
+    .contenido-slider > section{
+
+        width: 80%;
+
+
+    }
+    .articulo-pregunta{
+
+        font-size: 13px;
+        justify-content:left;
+       
+       
+    }
+
+    .articulo-respuesta{
+
+
+    font-size: 11px;
+
+    }
+
     .nav-menu{
-        width: 10vw;
+        width: 8vw;
     }
 
     .nav-title{
@@ -926,8 +1014,9 @@ footer{
         font-size: 30px;
     }
 
+   
     .agregar-imagen{
-        width: 95%;
+        width: 100%;
     }
     .cont-expert img{
         width: 95%;
@@ -938,29 +1027,55 @@ footer{
     .contact-us{
         width: 90%;
     }
-}
+    .img-galeria{
+        width: 60%;
+        margin-bottom: 40px;
+     }
+     .checklist{
+        width: 95%;
+     }
+     .service{
+        margin-bottom: 30px;
+     }
+     .n-service{
+        font-size: 15px;
+     }
+
     
 
-/*articulo-preguntas*/
+     .contenedor-conclusiones .n-service {
+        font-size: 10px;
+     }
+     .contenedor-bibliografia .n-service{
 
+        font-size: 8px;
 
-@media screen and (max-width:800px){
+     }
+    
+     .contenedor-objetivos img{
+        width: 45%;
+     }
+    .contenedor-metodologia img{
+        width: 45%;
+     }
 
-
-
-}
-
-
-@media screen and (max-width:500px) {
-
-  
-
-.articulo-pregunta{
-
-    font-size: 15px;
+     .contenedor-recomendaciones img{
+        width: 45%;
+     }
+     .cont-expert{
+        width: 80%;
+     }
+    .footer-content{
+        justify-content: center;}
    
-   
 }
 
 
-}
+
+
+
+
+
+
+
+
