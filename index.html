@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto PVE-DME</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!--MENU -->
+    <nav class="nav">
+        <div class="nav-container">
+            
+            <h1 class="nav-title" id="inicio">Programa de vigilancia epidemiologico para desordenes osteomusculares de codo y muñeca</h1>
+            
+                      
+            <!--abrir menu -->
+            <a href="#menu" class="nav-menu">
+                <img src="./img/menu-boton.svg" class="nav-icon">
+            </a>
+           <!--cerrar menu -->
+            <a href="#" class="nav-menu nav-menu--second">
+                <img src="./img/cerrar-boton.svg" class="nav-icon">
+            </a>
+
+            <!--MENU -->
+            <ul class="dropdown" id="menu" >
+
+                <!--submenu inicio -->
+
+                <li class="dropdown-list">
+                    <a href="#inicio" class="dropdown-link">
+                      <img src="./img/casa.svg" class="dropdown-icon">
+                      <span class="dropdown-span">Inicio</span>
+                    </a>
+                </li>
+
+                <!--submenu objetivos -->
+                <li class="dropdown-list">
+
+                    <a href="#objetivos" class="dropdown-link">
+
+                        <img src="./img/objetivo-menu.svg" class="dropdown-icon">
+                        <span class="dropdown-span">Objetivos</span>
+                        
+                    </a>
+                  
+                </li>
+
+              
+                <!--submenu preguntas -->
+
+                <li class="dropdown-list">
+
+                    <a href="#preguntas" class="dropdown-link">
+
+                        <img src="./img/preguntas.svg" class="dropdown-icon">
+                        <span class="dropdown-span">Preguntas</span>
+                        
+                    </a>
+
+                    </li>
+
+               
+                <!--submenu metodologia -->
+                <li class="dropdown-list">
+
+                    <a href="#metodologia" class="dropdown-link">
+
+                        <img src="./img/bxs-analyse.svg" class="dropdown-icon">
+                        <span class="dropdown-span">Metodologia</span>
+                         <img src="./img/flecha.svg" class="dropdown-arrow">
+
+                        <input type="checkbox" class="dropdown-check"> 
+                        
+                    </a>
+                     <div class="dropdown-content">
+
+                        <ul class="dropdown-sub">
+
+                            <li class="dropdown-li">
+                                <a href="#metodologia" class="dropdown-anchor">Fase Diagnostica</a>
+                            </li>
+
+                            <li class="dropdown-li">
+
+                                <a href="#metodologia2" class="dropdown-anchor">Fase de control e intervencion</a>
+                            </li>
+
+                            <li class="dropdown-li">
+
+                                <a href="#metodologia3" class="dropdown-anchor">Fase de evaluacion</a>
+                            </li>
+                         
+
+                       </ul>
+
+                                    
+                    </div> 
+
+                    </li>
+
+                 <!--submenu Resultados -->
+                 <li class="dropdown-list">
+
+                    <a href="#resultados" class="dropdown-link">
+
+                        <img src="./img/bxs-objects-vertical-bottom.svg" class="dropdown-icon">
+                        <span class="dropdown-span">Resultados</span>
+                        <img src="./img/flecha.svg" class="dropdown-arrow">
+
+                        <input type="checkbox" class="dropdown-check"> 
+                        
+                    </a>
+                     <div class="dropdown-content">
+
+                        <ul class="dropdown-sub">
+
+                            <li class="dropdown-li">
+                                <a href="#resultados" class="dropdown-anchor">Datos Sociodemograficos</a>
+                            </li>
+
+                            <li class="dropdown-li">
+
+                                <a href="#resultados1" class="dropdown-anchor">Morbilidad Sentida</a>
+                            </li>
+
+                            <!-- <li class="dropdown-li">
+
+                                <a href="#metodologia3" class="dropdown-anchor">Fase de evaluacion</a>
+                            </li> -->
+                         
+
+                       </ul>
+
+                                    
+                    </div> 
+                        
+                    </a>
+
+                    </li>
+
+                 <!--submenu conclusiones -->
+                 <li class="dropdown-list">
+
+                    <a href="#conclusiones" class="dropdown-link">
+
+                        <img src="./img/bxs-book-content.svg" class="dropdown-icon">
+                        <span class="dropdown-span">Conclusiones</span>
+                        
+                    </a>
+
+                    </li>
+
+                 <!--submenu recomendaciones -->
+                 <li class="dropdown-list">
+
+                    <a href="#recomendaciones" class="dropdown-link">
+
+                        <img src="./img/bxs-book-content.svg" class="dropdown-icon">
+                        <span class="dropdown-span">Recomendaciones</span>
+                        
+                    </a>
+
+                    </li>
+
+                 <!--submenu bibliografia -->
+                 <li class="dropdown-list">
+
+                    <a href="#bibliografia" class="dropdown-link">
+
+                        <img src="./img/bx-book.svg" class="dropdown-icon">
+                        <span class="dropdown-span">Bibliografia</span>
+                        
+                    </a>
+
+                    </li>
+
+                 <!--submenu contacto -->
+                <li class="dropdown-list">
+
+                    <a href="#contacto" class="dropdown-link">
+
+                        <img src="./img/email.svg" class="dropdown-icon">
+                        <span class="dropdown-span">Contacto</span>
+                        
+
+                    </a>
+
+                    
+
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+<!--SLIDER -->
+    <div class="contenedor2">
+        <div class="slider-contenedor2">
+            <div class="contenido-slider">
+                <section>
+                    <h2>Los programas de vigilancia epidemiológica utilizan monitoreos biológicos y ambientales.</h2>
+                    <!-- <a href="#">Contact us</a> -->
+                 </section>
+              
+          </div>
+
+            <div class="contenido-slider">
+                <section>
+                    <h2>los primeros enfocados en los factores de riesgo inherentes al trabajador, clasificándose como sano, sospechoso o enfermo.</h2>
+                    <!-- <a href="#">Contact us</a> -->
+                    
+                </section>
+                <!-- <img src="./img/2.svg" alt=""> -->
+            </div>
+
+            <div class="contenido-slider">
+                <section>
+                    <h2>y los segundos corresponden a los factores en el entorno de este, calificando el riesgo como alto, medio o bajo.</h2>
+                    <!-- <a href="#">Contact us</a> -->
+                    
+                </section>
+                <!-- <img src="./img/3.svg" alt=""> -->
+            </div>
+
+            <div class="contenido-slider">
+                <section>
+                    <h2>A partir de la clasificación de estos factores, pueden ejecutarse mecanismos de prevención de EL y AT a un nivel primario, secundario y terciario.</h2>
+                    <!-- <a href="#">Contact us</a> -->
+                    
+                </section>
+                <!-- <img src="./img/3.svg" alt=""> -->
+            </div>
+
+<!--copiamos el primer elemento al final para crear el efecto -->
+            <div class="contenido-slider">
+                <section>
+                    <h2>Los programas de vigilancia epidemiológica utilizan monitoreos biológicos y ambientales.</h2>
+                    <!-- <a href="#">Contact us</a> -->
+                 </section>
+             
+          </div>
+
+        </div>
+    </div>
+
+<!--MAIN -->
+    <main>
+<!--Contenedor objetivos -->
+        <section class="contenedor" id="objetivos">
+            <h2 class="subtitulo">Objetivos</h2>
+            <div class="contenedor-objetivos">
+                <img src="img/objetivo-main.svg" alt="">
+
+                <div class="checklist">
+
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">#</span>Objetivo General</h3>
+                        <p>Diseñar un programa de vigilancia epidemiológica a través de las Tics para desórdenes osteomusculares de codo y muñeca, que permita establecer estrategias para reducción de accidentes y enfermedades laborales.</p>
+                    </div>
+
+                
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">1</span>Objetivo Especifico</h3>
+                        <p>Determinar las características sociodemográficas de la población a estudio.</p>
+                    </div>
+
+                
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">2</span>Objetivo Especifico</h3>
+                        <p>Identificar la existencia de síntomas musculoesqueléticos de codo y muñeca  en los trabajadores.</p>
+                    </div>
+
+                
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">3</span>Objetivo Especifico</h3>
+                        <p>Brindar recomendaciones de intervención dirigidas a controlar el riesgo biomecánico acordes a las condiciones de trabajo y a la salud de los trabajadores.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+<!--contenedor preguntas -->
+        <section class="contenedor" id="preguntas">
+            <h2 class="subtitulo">Preguntas Frecuentes</h2>
+            <div class="contenedor-articulo">
+                      
+            <img src="img/Question_Flatline.svg" alt="">
+                 
+            <div class="checklist">
+
+              <!--pregunta 1 -->
+              <div class="service">
+            <h3 class="articulo-pregunta"> <span class="number">#</span>Que es un PVE Osteomuscular?
+                <img src="./img/flecha.svg" class="articulo-flecha">
+
+            </h3>
+
+            <article class="articulo-contenido">
+                <div class="articulo-mostrar">
+                    <p class="articulo-respuesta">Un programa de vigilancia epidemiológica (PVE) osteomuscular, es aquel que permite una detección temprana de los DME, facilitando una pronta y pertinente intervención del riesgo, garantizando ambientes seguros y saludables, que contribuyan a mejorar la calidad de vida de los trabajadores y hacerlos más productivos.</p>
+                                        
+                
+                </div>
+            </div>
+
+               
+
+            
+        <!--pregunta 2 -->
+        <div class="service">
+            <h3 class="articulo-pregunta"> <span class="number">#</span>Que son las GATISST?
+                <img src="./img/flecha.svg" class="articulo-flecha">
+
+            </h3>
+
+            <article class="articulo-contenido">
+                <div class="articulo-mostrar">
+                    <p class="articulo-respuesta">Son las guías de atención integral en seguridad y salud en el trabajo que aplican como herramientas en el ámbito laboral,con la finalidad de brindar apoyo en prevención, vigilancia, diagnóstico e intervención. Aplicado a los DME determinan riesgos derivados de la carga, la postura, la fuerza, el movimiento y el ámbito psicosocial.</p>
+                    
+                    
+                
+                </div>
+            </div>
+
+             <!--pregunta 3 -->
+             <div class="service">
+                <h3 class="articulo-pregunta"> <span class="number">#</span>Justificacion de un PVE Osteomuscular?
+                    <img src="./img/flecha.svg" class="articulo-flecha">
+    
+                </h3>
+    
+                <article class="articulo-contenido">
+                    <div class="articulo-mostrar">
+                        <p class="articulo-respuesta">Los trastornos musculoesqueléticos son multifactoriales, es decir que son ocasionados por factores psicosociales, físicos, individuales y ocupacionales, por lo que resulta de suma importancia la identificación, monitoreo y seguimiento de los factores de riesgo biomecánico en los lugares de trabajo por medio de la observación continua de la distribución y tendencia de dichos factores y de sus efectos en los trabajadores, para aplicar medidas que mitiguen esta situación, siendo la implementación de un programa de vigilancia epidemiológica la mejor forma de llevarlo a cabo.</p>
+                        
+                        
+                    
+                    </div>
+                </div>
+
+             <!--pregunta 4 -->
+             <div class="service">
+                <h3 class="articulo-pregunta"> <span class="number">#</span>Que es el Cuestionario Nordico?
+                    <img src="./img/flecha.svg" class="articulo-flecha">
+    
+                </h3>
+    
+                <article class="articulo-contenido">
+                    <div class="articulo-mostrar">
+                        <p class="articulo-respuesta">"Es un cuestionario estandarizado para la detección y análisis de síntomas musculo
+                            esqueléticos, aplicable en el contexto de estudios ergonómicos o de salud ocupacional con el fin
+                            de detectar la existencia de síntomas iniciales, que todavía no han constituido enfermedad o
+                            no han llevado aún a consultar al médico."</p>
+                        
+                        
+                    
+                    </div>
+                </div>
+        </div>
+        </div>
+
+        </section>
+
+      
+
+<!--contenedor metodologia -->
+        <section class="contenedor" id="metodologia">
+            <h2 class="subtitulo">Fase diagnostica</h2>
+            <div class="contenedor-metodologia">
+                    <img src="img/diagnostica.svg" alt="">
+                    <div class="checklist2">
+                        <div class="service">
+                            <h3 class="n-service"><span class="number">1</span>Poblacion objeto</h3>
+                            <!-- <p>bla bla bla.</p> -->
+                        </div>
+                        
+                    <div class="checklist2">
+                        <div class="service">
+                            <h3 class="n-service"><span class="number">2</span>Mapa de riesgos de la condicion de riesgo(GATISST y OSHA)</h3>
+                            <!-- <p>bla bla bla.</p> -->
+                        </div>
+                   
+                    </div>
+                    <div class="checklist2">
+                        <div class="service">
+                            <h3 class="n-service"><span class="number">3</span>Monitoreo Ambiental(Condiciones de trabajo)</h3>
+                            <!-- <p>bla bla bla.</p> -->
+                        </div>
+                        
+                    <div class="checklist2">
+                        <div class="service">
+                            <h3 class="n-service"><span class="number">4</span>Monitoreo Biologico(condiciones del trabajador)</h3>
+                            <!-- <p>bla bla bla.</p> -->
+                        </div>
+                   
+                    </div>
+                    <div class="checklist2">
+                        <div class="service">
+                            <h3 class="n-service"><span class="number">5</span>Identificacion del riesgo integral</h3>
+                            <!-- <p>bla bla bla.</p> -->
+                        </div>
+                        
+                    <div class="checklist2">
+                        <div class="service">
+                            <h3 class="n-service"><span class="number">6</span>Incapacidades por enfermedad laboral</h3>
+                            <!-- <p>bla bla bla.</p> -->
+                        </div>
+                   
+                    </div>
+                    <div class="checklist2">
+                        <div class="service">
+                            <h3 class="n-service"><span class="number">7</span>Incapacidades por accidentes de trabajo</h3>
+                            <!-- <p>bla bla bla.</p> -->
+                        </div>
+                        
+                    <div class="checklist2">
+                        <div class="service">
+                            <h3 class="n-service"><span class="number">8</span>Resultado de encuesta de morbilidad sentidad(Cuestionario Nordico)</h3>
+                            <!-- <p>bla bla bla.</p> -->
+                        </div>
+                   
+                    </div>
+                </div>
+            </section>
+            
+            <section class="contenedor" id="metodologia2">
+                <h2 class="subtitulo">Fase diagnostica</h2>
+             
+            <div class="contenedor-metodologia">
+                <!-- <h2 class="subtitulo">Fase de control e intervencion</h2> -->
+                <div class="cont-expert">
+                    <img src="img/ingenieria.svg" alt="">
+                    <h3 class="n-expert">Medidas de ingenieria(Medio/fuente)</h3>
+                </div>
+                <div class="cont-expert">
+                    <img src="img/administrativo.svg" alt="">
+                    <h3 class="n-expert">Medidas administrativas(Medio/persona)</h3>
+                </div>
+                <div class="cont-expert">
+                    <img src="img/persona.svg" alt="">
+                    <h3 class="n-expert">Proteccion personal</h3>
+                </div>
+                </div>
+            </section>
+        
+               
+<!--contenedor metodologia2 -->
+                <!-- <section class="contenedor" id="metodologia2">
+                    <h2 class="subtitulo">Fase de control e intervencion</h2>
+                    <div class="contenedor-metodologia">
+                        <img src="img/legal.svg" alt="">
+                        <div class="checklist">
+                            <div class="service">
+                                <h3 class="n-service"><span class="number">1</span>Marco Legal</h3>
+                                <p>bla bla bla.</p>
+                            </div>
+                        <div class="checklist">
+                            <div class="service">
+                                <h3 class="n-service"><span class="number">2</span>Marco Contextual</h3>
+                                <p>bla bla bla.</p>
+                            </div>
+                       
+                        </div>
+                    </div>
+                </section> -->
+<!--contenedor metodologia3 -->
+                <section class="contenedor" id="metodologia3">
+                    <h2 class="subtitulo">Fase de evaluacion</h2>
+                    <div class="contenedor-metodologia">
+                        <img src="img/resultados.svg" alt="">
+
+                        <div class="checklist">
+                            <div class="service">
+                                <h3 class="n-service"><span class="number">1</span>Indicadores de estructura</h3>
+                                <!-- <p>bla bla bla.</p> -->
+                            </div>
+                            
+
+                        <div class="checklist">
+                            <div class="service">
+                                <h3 class="n-service"><span class="number">2</span>Indicadores de proceso</h3>
+                                <!-- <p>bla bla bla.</p> -->
+                            </div>
+                            
+
+                        <div class="checklist">
+                            <div class="service">
+                                <h3 class="n-service"><span class="number">3</span>Indicadores de resultado</h3>
+                                <!-- <p>bla bla bla.</p> -->
+                            </div>
+                       
+                        </div>
+                    </div>
+
+                </section>
+
+            </section>
+        <section class="gallery" id="resultados">
+            <div class="contenedor">
+                <h2 class="subtitulo">Datos Sociodemograficos</h2>
+                <div class="contenedor-galeria">
+                    <img src="./img/Diapositiva1.JPG" alt="" class="img-galeria">
+                    <img src="./img/Diapositiva2.JPG" alt="" class="img-galeria">
+                    <img src="./img/Diapositiva5.JPG" alt="" class="img-galeria">
+                    <img src="./img/Diapositiva6.JPG" alt="" class="img-galeria">
+                    <img src="./img/resultados2.jpg" alt="" class="img-galeria">
+                    <img src="./img/Diapositiva10.JPG" alt="" class="img-galeria">
+                </div>
+            </div>
+        </section>
+
+            </section>
+        <section class="gallery" id="resultados1">
+            <div class="contenedor">
+                <h2 class="subtitulo">Morbilidad sentida</h2>
+                <div class="contenedor-galeria">
+                    
+                    <img src="./img/Diapositiva3.JPG" alt="" class="img-galeria">
+                    <img src="./img/Diapositiva4.JPG" alt="" class="img-galeria">
+                    <img src="./img/Diapositiva7.JPG" alt="" class="img-galeria">
+                    <img src="./img/Diapositiva8.JPG" alt="" class="img-galeria">
+                    <img src="./img/resultados.jpg" alt="" class="img-galeria">
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="imagen-light">
+                <img src="img/cerrar-boton.svg" alt="" class="close">
+                <img src="img/muñeca.jpg" alt="" class="agregar-imagen">
+            </section>
+
+           
+        <section class="contenedor" id="conclusiones">
+            <h2 class="subtitulo">Conclusiones</h2>
+            <div class="contenedor-conclusiones">
+                <img src="img/Career _Monochromatic.svg">
+                <div class="checklist">
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">1</span>La población en estudio se caracterizó por ser mayoritariamente de sexo femenino, con un grupo poblacional entre mayores y menores de 40 años edad muy igualitario, una antigüedad laboral de más de 5 años en más del 50% de la población del estudio. Estos factores pueden influir en la percepción y la prevalencia de los síntomas musculoesqueléticos de codo y muñeca.</h3>
+                        <!-- <p></p> -->
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">2</span>Se identificó la existencia de síntomas musculoesqueléticos de codo y muñeca en el 22,3% de los trabajadores, siendo más frecuentes en el lado derecho del cuerpo. Los síntomas se relacionaron con factores de riesgo biomecánico como posturas forzadas, movimientos repetitivos, fuerza manual, demanda física, jornada laboral de 48 horas a la semana, tiempo mayor a 5 años laborando, y diseño inadecuado del puesto de trabajo.</h3>
+                        <!-- <p></p> -->
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">3</span>Se brindaron recomendaciones de intervención dirigidas a controlar el riesgo biomecánico acordes a las condiciones de trabajo y a la salud de los trabajadores, tales como: realizar pausas activas, capacitar a los trabajadores sobre la prevención de desórdenes musculoesqueléticos y realizar seguimiento médico periódico, investigacion de incidentes y accidentes ,  así como de establecer prioridades de intervención.</h3>
+                        <!-- <p></p> -->
+                    </div>
+               
+                </div>
+            </div>
+        </section>
+
+        <section class="contenedor" id="recomendaciones">
+            <h2 class="subtitulo">Recomendaciones</h2>
+            <div class="contenedor-recomendaciones">
+                <img src="img/Job Interview _Monochromatic.svg" alt="">
+                <div class="checklist">
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">1</span>Cuestionario Nordico</h3>
+                        <p>Extender la aplicación de la encuesta de morbilidad sentida a los demás trabajadores de la empresa, para identificar prioridades de intervención por trabajadores y frentes de trabajo.</p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">2</span>Inspecciones</h3>
+                        <p>De puestos de trabajo para los trabajadores que presentan sintomatología o tienen diagnóstico de DME en codo y muñeca.</p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">3</span>Capacitaciones</h3>
+                        <p>A toda la población expuesta al riesgo de desarrollar DME en codo y muñeca, que abarquen al menos, Higiene postural, manipulación manual de cargas, prevención de lesiones osteomusculares en miembros superiores,  actividad física y hábitos de vida saludable, ergonomía en el puesto de trabajo, estiramientos y fortalecimiento muscular.</p>
+                    </div>
+                   
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">4</span>Articular</h3>
+                        <p>El PVE de codo y muñeca con el Programa de Pausas Activas y orientar actividades desde dicho programa para prevenir la aparición de DME a partir de la disminución de la carga muscular estática y dinámica.</p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">5</span>Seguimiento Medico</h3>
+                        <p>A los trabajadores sintomáticos y diagnosticados con DME de codo y muñeca. Así como a los casos de reintegro laboral y/o cumplimiento de recomendaciones médicas, para adaptar las funciones y el puesto de trabajo a las capacidades del trabajador, garantizando su bienestar y rehabilitación integral.</p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">6</span>Investigar IT, AT, EL</h3>
+                        <p>Cuyo factor de riesgo haya sido biomecánico y el mecanismo de lesión haya sido sobreesfuerzo, esfuerzo excesivo o falso movimiento en las articulaciones del codo y muñeca. Así como  diagnósticos de síndrome del túnel del carpo, tenosinovitis de estiloides radial o epicondilitis medial y lateral, para a partir de ellas, ajustar las formaciones y actividades orientadas a prevenir, controlar y mitigar el riesgo.</p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">7</span>Realizar</h3>
+                        <p>Medición, seguimiento y evaluación del PVE de codo y muñeca, para tomar decisiones que garanticen la mejora continua del programa.</p>
+                    </div>
+               
+                </div>
+            </div>
+        </section>
+         
+        <section class="contenedor" id="bibliografia">
+            <h2 class="subtitulo">Bibliografia</h2>
+            <div class="contenedor-bibliografia">
+                
+                <div class="checklist1">
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">1</span>Widanarko, B., Legg, S., Devereux, J., & Stevenson, M. The combined effect of physical, psychosocial/organisational and/or environmental risk factors on the presence of work-related musculoskeletal symptoms and its consequences. Applied Ergonomics, 2014, 45(6), 1610-1621</h3>
+                        
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">2</span>García S, Burbano E, Constante L, Álvarez M. Gestión del talento humano: Diagnóstico y sintomatología de trastornos musculoesqueléticos evidenciados a través del Cuestionario Nórdico de Kuorinka. INNOVA Research Journal, 2021 6(1), 232-245.</h3>
+                        <!-- <p></p> -->
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">3</span>Carballo-Arias YA. Epidemiología de los trastornos musculoesqueléticos de origen ocupacional. Temas de epidemiología y salud pública Tomo II. 1° ed, Venezuela; 2013. p. 745-764.</h3>
+                        <!-- <p>El presente programa de vigilancia....</p> -->
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">4</span>Organización Internacional del Trabajo. Enciclopedia de salud y seguridad en el trabajo. Minist Trab y Asuntos Soc. 2001.</h3>
+                        
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">5</span>Muñoz CP. Vigilancia Epidemiológica de los Desórdenes Músculo-Esqueléticos (DME) Relacionados con el Trabajo: ¿Una Oportunidad para la Investigación Epidemiológica? 2010; 324-31.</h3>
+                        
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">6</span>Ministerio del Trabajo. Informe ejecutivo II Encuesta nacional de condiciones de seguridad y salud en el trabajo en el sistema general de riesgos laborales. 2019. [Internet]. Fasecolda. [citado el 16 de diciembre de 2022]. Disponible en: https://fasecolda.com/cms/wp-content/uploads/2019/08/ii-encuesta-nacional-seguridad-salud-trabajo-2013.pdf</h3>
+                        
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">7</span>Agencia Europea para la seguridad y la salud en el trabajo. Trastornos Musculoesqueléticos. 2019. [Internet]. EU-OSHA [citado el 16 de diciembre de 2022]. Disponible en: https://osha.europa.eu/es/themes/musculoskeletal-disorders</h3>
+                        
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">8</span>Márquez M. Guía práctica ergonomía: fundamentos de ergonomía industrial. San Cristóbal: Fondo editorial UNET. Feunet; 2009.</h3>
+                        
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">9</span>Orhan K., Memon A. Introductory Chapter: Work-Related Musculoskeletal Disorders. IntechOpen. 2019.</h3>
+                        
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">10</span>Vaca VB., Ferié CP., Dihigo JG., Barrios YA., García, GM. Elaboración de un protocolo para la vigilancia de la salud laboral. Revista Médica Electrónica, 2017. 39(2), 188-199.</h3>
+                        
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">11</span>Decreto 1072 de 2015. Por medio del cual se expide el Decreto Único Reglamentario del Sector Trabajo. (Mayo 26 de 2015)</h3>
+                        
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">12</span>Ministerio de sanidad, servicios sociales e igualdad. Vigilancia de Salud de los Trabajadores. Madrid: Editorial MAPFRE; 2015. p. 64.</h3>
+                        
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">13</span>Leal R. Plan de Actuación en Empresas con Riesgos de Enfermedad Profesional. Revista Formación y seguridad laboral.2014;137:71-72.</h3>
+                        
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">14</span>García C, Aguilar P. Vigilancia epidemiológica en salud. Revista Archivo Médico de Camagüey, 17(6). 2013. p. 121-128.
+                        </h3>
+                        
+                    </div>
+               
+                </div>
+            </div>
+        </section>
+       
+    </main>
+
+
+
+<!--footer -->
+    <footer id="contacto">
+        <div class="contenedor footer-content">
+            <div class="contact-us">
+                <h2 class="brand">Proyecto PVE-DME</h2>
+                <p>proyecto.pve.dme@gmail.com</p>
+            </div>
+            <div class="social-media">
+                 <a href="https://www.facebook.com/summarpro/?locale=es_LA" target="_blank" class="social-media-icon">
+                    <i class='bx bxl-facebook'></i> 
+                </a>
+                <a href="https://www.youtube.com/channel/UC5YxTcaMtVKZ8CXYKAKohUw" class="social-media-icon">
+                    <i class='bx bxl-youtube'></i>
+                </a>
+                <!-- <a href="./" class="social-media-icon">
+                    <i class='bx bxl-tiktok'></i>
+                </a> -->
+                <a href="https://www.instagram.com/summarproductividad/?hl=es" class="social-media-icon">
+                    <i class='bx bxl-instagram'></i>
+                </a> 
+                                
+
+
+            </div>
+        </div>
+
+        <div class="line"></div>
+
+    </footer>
+    
+    <script src="lightbox.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

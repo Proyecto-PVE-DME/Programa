@@ -1,0 +1,966 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+
+    font-family: 'Roboto', sans-serif;
+    
+
+}
+
+:root{
+
+    scroll-behavior: smooth;
+
+}
+
+/*COMIENZA EL MENU DE NAVEGACION*/
+.nav{
+
+    background-color: #830248;
+
+    --img1: scale(1);
+    --img2: scale(0);
+
+}
+
+.nav:has( .dropdown:target ){
+
+    --img1: scale(0);
+    --img2: scale(1);
+
+    --clip: inset(0 0 0 0);
+
+}
+
+.nav-container{
+
+    width: 90%;
+    margin: 0 auto;
+    height: 70px;
+
+    display: grid;
+   
+
+    overflow: hidden;
+
+}
+
+.nav-title{
+
+    color: #fff;
+    grid-area: title;
+
+}
+
+.nav-menu{
+
+    grid-area: img;   
+    position:fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 10;
+    color: #fff;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, rgba(0, 0, 0, .5));
+    
+
+    transform: var(--img1);
+
+}
+
+.nav-menu--second{
+
+    transform: var(--img2);
+    
+
+}
+
+.nav-icon{
+
+    width: 50px;
+    display: block;
+    
+
+}
+
+.dropdown{
+
+    position: absolute;  
+    background-color: #9f8ad0;;
+    width: 75%;
+    max-width: 300px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 1em;
+
+    display: grid;
+    align-content: center;
+    gap: 1rem;
+    z-index: 9;
+
+    overflow-y: auto;
+
+    clip-path: var(--clip, inset(0 0 100% 100%));
+    transition: clip-path .5s;
+
+}
+
+.dropdown-list{
+
+    list-style: none;
+
+
+}
+.dropdown-link{
+
+    color:#000  ;
+    padding: 1em .7em;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+
+    position: relative;
+    background-color: var(--bg, transparent);
+    border-radius: 6px;
+
+}
+
+.dropdown-list:has( :checked ){
+
+    --rows: 1fr;
+    --rotate: rotate(180deg);
+    --bg: #28303B;
+
+}
+
+.dropdown-check{
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+
+
+}
+
+.dropdown-arrow{
+
+    margin-left: auto;
+    transform: var(--rotate, 0);
+    transition: .2s transform;
+
+
+}
+
+.dropdown-content{
+
+    display: grid;
+    grid-template-rows: var(--rows, 0fr);
+    transition: .3s grid-template-rows;
+
+}
+
+.dropdown-sub{
+
+    overflow: hidden;
+   
+}
+
+.dropdown-li{
+
+    width: 85%;
+    list-style: none;
+    margin-left: auto;
+
+}
+
+.dropdown-anchor{
+
+
+    padding: 1em;
+    display: block;
+    color: #000;
+    text-decoration: none;
+
+}
+
+
+/*COMIENZA EL SLIDER*/
+.contenedor2{
+
+    width: 100%;
+    overflow: hidden;/*quita la barra horrizontal para poder mover la pantalla de lado a lado*/
+
+}
+
+/*la clase despues de contenedor*/
+.slider-contenedor2{
+
+    width: 100%;
+    display: flex;/*pone los 4 elementos en horizontal pegados, pero con el flex-shrink en contenido-slider se arregla*/
+
+
+}
+
+/*las medias de h2,a e img dentro del contenedor*/
+.contenido-slider{
+
+    width: 100%;
+    height: 820px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;/*capacidad de encoger*/
+
+}
+
+.contenido-slider:nth-child(1){
+
+    
+    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.404) 0%, rgba(251, 194, 235, 0.404) 100%),url(./img/muñeca.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+
+/*esto es una forma de elegir el segundo elemento */
+.contenido-slider:nth-child(2){
+
+    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.404) 0%, rgba(251, 194, 235, 0.404) 100%),url(./img/dino-januarsa-4fSCn5mwp-Q-unsplash.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+/*forma de elgir el tercer elemento*/
+.contenido-slider:nth-child(3){
+
+    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.404) 0%, rgba(251, 194, 235, 0.404) 100%),url(./img/codos.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+.contenido-slider:nth-child(4){
+
+    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.404) 0%, rgba(251, 194, 235, 0.404) 100%),url(./img/dimas-handy-8svRZcxwrjg-unsplash\ \(1\).jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+.contenido-slider:nth-child(5){
+
+   
+    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.404) 0%, rgba(251, 194, 235, 0.404) 100%),url(./img/muñeca.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+ 
+ 
+
+}
+
+/*la imagen*/
+.contenido-slider > img{
+
+    width: 400px;
+
+
+}
+
+
+
+/*incluye toda la seccion de h2 y a*/
+.contenido-slider > section{
+
+    width: 70%;
+
+
+}
+
+/*texto*/
+.contenido-slider h2{
+
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+   
+    flex-direction: column;
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+
+   
+}
+
+/*boton*/
+.contenido-slider a{
+
+    color: #fff;
+    background: #332863;
+    width: 100px;
+    display: block;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 3px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+
+/*aqui arregla el boton morado del segundo elemento por otro color*/
+.contenido-slider:nth-child(2) a {  
+
+    background: #fff;
+    color: #332863;
+
+
+}
+
+/*MAIN*/
+
+.contenedor{
+
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 50px 0;
+    
+    
+}
+
+
+
+
+/*Introduccion-objetivos-marco*/
+
+.subtitulo{
+
+    text-align: center;
+    font-weight: 1100;
+    color: #9f8ad0;
+    margin-bottom: 40px;
+    font-size: 40px;
+    
+
+}
+
+
+.contenedor-objetivos{
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 650px;
+    
+
+}
+
+.contenedor-metodologia{
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 650px;
+
+}
+.contenedor-conclusiones{
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 650px;
+
+}
+
+.contenedor-recomendaciones{
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 1100px;
+
+}
+
+
+
+
+/* 
+.contenedor-introduccion img{
+
+    width: 40%;
+
+
+} */
+
+.contenedor-objetivos img{
+
+    width: 40%;
+
+
+}
+
+.contenedor-metodologia img{
+
+    width: 40%;
+
+
+}
+
+.checklist{
+
+    width: 60%;
+
+}
+.checklist1{
+
+    width: 95%;
+
+}
+
+
+.service{
+
+    margin-bottom: 40px;
+    
+
+}
+
+.n-service{
+
+    margin-bottom: 7px;
+    color: #9f8ad0;
+
+}
+
+.number{
+
+    display: inline-block;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    text-align:center;
+    border-radius: 50%;
+    font-weight: 700;
+    line-height: 30px;
+    margin-right: 5px;
+
+}
+
+/*Galeria-portafolio*/
+
+.gallery{
+
+    
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 50px 0;
+    
+
+} 
+
+.contenedor-galeria{
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+ 
+
+
+}
+
+.img-galeria{
+
+    width: 35%;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    cursor: pointer;
+
+
+}
+
+.imagen-light{
+
+    position: fixed;
+    background: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+    
+}
+
+
+.show{
+
+    transform: translate(0);
+
+}
+
+.agregar-imagen{
+
+    width: 60%;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform .3s .2s;
+
+
+}
+
+.showImage{
+
+    transform: scale(1);
+
+}
+
+.close{
+
+    position: absolute;
+    top: 130px;
+    right: 130px;
+    width: 40px;
+    cursor: pointer;
+
+}
+
+/*expertos-conclusiones*/
+
+.experts{
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 650px;
+
+
+}
+
+.cont-expert{
+
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.cont-expert img{
+
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.n-expert{
+
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: 600;
+    color: #764ba2;
+
+
+
+}
+
+
+
+/*articulo-preguntas*/
+
+.articulo{
+
+    width: 90%;
+    text-align: center;
+    
+}
+
+/*
+.article__title{
+
+    font-size: 1.7rem;
+    color: var(--very-dark-blue);
+
+}
+*/
+
+.articulo-flecha{
+
+    transition: transform .3s;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+ 
+    
+}
+
+.articulo-flecha--rotate{
+
+    transform: rotate(180deg);
+    filter: hue-rotate(129deg);
+
+}
+
+
+.contenedor-articulo{
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 650px;
+
+    
+
+}
+
+.contenedor-articulo img{
+
+    width: 30%;
+
+}
+
+.articulo-pregunta{
+
+    font-size: 1.4rem;
+    text-align: left;
+    color: #764ba2;
+    font-weight: 400;
+    padding: 1.6rem 0;
+
+    display: flex;
+    align-items: center;
+    justify-content:left;
+    flex-wrap: wrap;
+
+    cursor: pointer;
+   
+}
+
+
+
+.articulo-contenido{
+
+    display: grid;
+    border-bottom: 2px solid #667eea;
+
+    grid-template-rows: 0fr;
+
+    transition: grid-template-rows .3s;
+
+}
+
+.articulo-contenido--show{
+
+    grid-template-rows: 1fr;
+
+}
+
+.articulo-mostrar{
+
+    overflow: hidden;
+}
+
+.articulo-respuesta{
+
+    padding: 1.3rem;
+    text-align:justify;
+    padding-top: 0;
+    color: black;
+
+}
+
+
+/*FOOTER*/
+footer{
+
+    background: #9f8ad0;
+    padding-bottom: 0.1px;
+
+}
+
+.footer-content{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.contact-us{
+
+    width: 40%;
+    color: #fff;
+
+
+}
+
+.brand{
+
+    font-weight: 500;
+    font-size: 40px;
+
+}
+
+.brand+p{
+
+    font-weight: 500;
+    text-align:left;
+
+}
+
+.social-media{
+
+    width: 50%;
+    display: flex;
+    justify-content:space-evenly;
+
+}
+
+.social-media-icon{
+
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff ;
+    border-radius: 50%;
+    text-align:center;
+    color: #fff;
+
+
+}
+
+.social-media-icon:hover{
+
+    background:#fff;
+    color: #764ba2;
+
+}
+
+.social-media-icon i{
+
+    font-size: 30px;
+    line-height: 60px;
+
+}
+
+.line{
+
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 60px;
+
+
+}
+
+
+/*adaptacion a dispositivos moviles de cada elemento cuando tenga 800px*/
+
+/* SLIDER */
+
+@media screen and (max-width:800px ){
+
+
+    .contenedor-preguntas{
+
+        height: 120vh;
+
+    }
+
+    .contenido-slider > img{
+
+        width: 250px;
+
+
+    }
+
+    .contenido-slider > section{
+
+        width: 40%;
+
+
+    }
+
+    .contenido-slider h2{
+
+        font-size: 23px;
+    }
+
+}
+
+/*adaptacion a dispositivos moviles de cada elemento cuando tenga 600px*/
+
+@media screen and (max-width:600px ){
+
+
+      .contenedor-preguntas{
+
+        height: 120vh;
+
+    }
+
+    .contenido-slider{
+
+       flex-direction: column-reverse;/*para que se pongan los elementos uno encima del otro*/
+
+
+    }
+
+    .contenido-slider > section{
+
+        width: 80%;
+
+
+    }
+
+   
+}
+
+
+/* OTROS */
+@media screen and (max-width:800px){
+    .nav-menu{
+        width: 50vw;
+    }
+    .nav-title{
+        font-size: 1px;
+    }
+     .img-galeria{
+        width: 80%;
+        margin-bottom: 40px;
+     }
+     .checklist{
+        width: 80%;
+     }
+     .service{
+        margin-bottom: 30px;
+     }
+     .agregar-imagen{
+        width: 80%;
+
+     }
+     .contenedor-objetivos img{
+        width: 45%;
+     }
+.contenedor-metodologia img{
+        width: 45%;
+     }
+     .cont-expert{
+        width: 80%;
+     }
+    .footer-content{
+        justify-content: center;
+
+    }
+
+     .social-media{
+     width: 80% ;
+     justify-content: space-evenly;
+    }
+
+    .social-media-icon{
+        margin-left: 0;
+    }
+
+    .social-media i{
+        margin-left: 0;
+    }
+
+    .contact-us{
+        text-align: center;
+        width: 80%;
+        margin-bottom: 40px;
+
+    }
+}
+
+@media screen and (max-width:500px) {
+    .nav-menu{
+        width: 10vw;
+    }
+
+    .nav-title{
+        font-size: 14px;
+
+    }
+    .subtitulo{
+        font-size: 30px;
+    }
+
+    .agregar-imagen{
+        width: 95%;
+    }
+    .cont-expert img{
+        width: 95%;
+    }
+    .social-media{
+        width: 100%;
+    }
+    .contact-us{
+        width: 90%;
+    }
+}
+    
+
+/*articulo-preguntas*/
+
+
+@media screen and (max-width:800px){
+
+
+
+}
+
+
+@media screen and (max-width:500px) {
+
+  
+
+.articulo-pregunta{
+
+    font-size: 15px;
+   
+   
+}
+
+
+}
