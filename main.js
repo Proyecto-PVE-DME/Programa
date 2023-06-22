@@ -2,7 +2,7 @@ let slider = document.querySelector(".slider-contenedor2")/*para los 4 elementos
 let sliderIndividual = document.querySelectorAll(".contenido-slider")/*aqui es para elemento por elemento*/
 let contador = 1;
 let width = sliderIndividual[0].clientWidth; /*al primer elemento de cada contenido slider va a tomar su ancho(width)*/
-let intervalo = 4000;
+let intervalo = 5000;
 const clickQuestions = document.querySelectorAll('.articulo-pregunta');
 
 
