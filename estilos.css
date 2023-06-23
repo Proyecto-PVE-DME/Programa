@@ -877,8 +877,17 @@ footer{
     .nav-menu{
         width: 8px;
     }
+
+    .nav-container{
+
+        height: auto;
+
+    }
+
+
     .nav-title{
         font-size: 1px;
+        text-align: center;
     }
 
 
