@@ -1033,9 +1033,15 @@ footer{
     .nav-menu{
         width: 8vw;
     }
+    .nav-container{
+
+        height: auto;
+
+    }
 
     .nav-title{
         font-size: 14px;
+        text-align: center;
 
     }
     .subtitulo{
